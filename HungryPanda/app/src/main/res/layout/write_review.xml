@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="@dimen/insert_rating"
+        android:layout_height="@dimen/insert_rating"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_star_border_black_24dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/star3"
+        app:layout_constraintTop_toTopOf="@+id/star3" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="@dimen/insert_rating"
+        android:layout_height="@dimen/insert_rating"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_star_border_black_24dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/star2"
+        app:layout_constraintTop_toTopOf="@+id/star3" />
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="@dimen/insert_rating"
+        android:layout_height="@dimen/insert_rating"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_star_border_black_24dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/star3"
+        app:layout_constraintTop_toTopOf="@+id/star3" />
+
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="@dimen/insert_rating"
+        android:layout_height="@dimen/insert_rating"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_star_border_black_24dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/star4"
+        app:layout_constraintTop_toTopOf="@+id/star3" />
+
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="@dimen/insert_rating"
+        android:layout_height="@dimen/insert_rating"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_star_border_black_24dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layoutReview"
+        android:layout_width="395dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:hint="Review"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/star3">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/input_review"
+            android:foregroundTint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/bnt_done"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rating_background"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutReview" />
+
+</android.support.constraint.ConstraintLayout>

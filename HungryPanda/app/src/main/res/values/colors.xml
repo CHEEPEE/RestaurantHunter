@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ef5350</color>
+    <color name="colorPrimaryDark">#FC7813</color>
+    <color name="colorAccent">#616161</color>
+    <color name="colorText">#C0C0C0</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPrimaryDarkLogin">#d7fc7813</color>
+    <color name="colorTextPrimary">#424242</color>
+    <color name="colorBanner">#ef9a9a</color><!--#772b2b2b-->
+    <color name="cardtransBannerColorMenu">#e0ef5350</color>
+</resources>
